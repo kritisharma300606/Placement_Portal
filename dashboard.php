@@ -5,6 +5,7 @@ $name = isset($_SESSION['name']) ? $_SESSION['name'] : 'Student';
 $user_id = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0;
 $result = $conn->query("SELECT applications.id, jobs.title, jobs.company, jobs.location FROM applications JOIN jobs ON applications.job_id = jobs.id WHERE applications.user_id = $user_id");
 ?>
+// heading
 <!DOCTYPE html>
 <html>
 <head>
